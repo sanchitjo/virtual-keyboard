@@ -2,7 +2,6 @@
     padding: 0;
     margin: 0;
 }
-
 html,
 body {
     height: 100%;
@@ -11,25 +10,19 @@ body {
     justify-content: center;
     align-items: center;
 }
-
 .container {
-    background-color: rgb(187, 179, 179);
-    /* height: 100%; */
-    /* width: 100%; */
+    background-color: black;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /* padding: 0 100px; */
     gap: 10px;
     padding: 20px;
     border-radius: 20px;
 }
-
 .row {
     width: 100%;
 }
-
 .first,
 .second,
 .third,
@@ -39,23 +32,23 @@ body {
     display: flex;
     justify-content: space-between;
 }
-
 button {
-    background-color: white;
+    background-color: whitesmoke;
     height: 60px;
     width: 60px;
-    /* border: 1px solid black; */
     border: none;
     border-radius: 10px;
     box-shadow: 2px 2px 3px;
     font-size: 20px;
     margin-left: 5px;
 }
-
 button:active {
-    box-shadow: 4px 4px 4px black;
+    box-shadow: 1px 1px 1px whitesmoke;
 }
-
+button:hover {
+    cursor: pointer;
+    
+}
 .escape,
 .delete,
 .tab,
@@ -64,4 +57,19 @@ button:active {
 .shift,
 .space-bar {
     flex-grow: 4;
+}
+@media only screen and (max-width: 1000px){ 
+    button {
+        height: 30px;
+        width: 30px;
+        font-size: 10px;
+    }
+    .row {
+        width: 75%;
+    }
+    .container {
+        padding: 5px;
+        gap: 2px;
+    }
+    
 }
